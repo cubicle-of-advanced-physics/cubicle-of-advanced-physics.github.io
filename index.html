@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubicle of Advanced Physics™</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        /* Hero Section with Background Image */
+        .hero {
+            /* Free stock image of people discussing at a table */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Takes up the full screen height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            color: #f39c12; /* Tea color accent */
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        /* Membership Form Styles */
+        .join-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .join-form h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .join-form input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .join-form button {
+            width: 95%;
+            padding: 12px;
+            margin-top: 15px;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .join-form button:hover {
+            background-color: #d68910;
+        }
+
+        /* Blog Section Styles */
+        .blog-section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .blog-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2c3e50;
+            border-bottom: 3px solid #f39c12;
+            display: inline-block;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+        }
+
+        .blog-post {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-left: 5px solid #2c3e50;
+        }
+
+        .blog-post h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.5rem;
+        }
+
+        .date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Cubicle of Advanced Physics™</h1>
+        <p>A digital lounge where physicists gather to discuss the mechanics of the universe over a warm cup of tea.</p>
+        
+        <div class="join-form">
+            <h2>Join the Cubicle</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="college" placeholder="College / Institution Name" required>
+                <button type="submit">Request Membership</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="blog-section">
+        <center><h2>Weekly Tea-Time Discussions</h2></center>
+
+        <div class="blog-post">
+            <h3>Week 3: Deciphering the Inverse Pole Figure and Pole Figure</h3>
+            <div class="date">Discussion lead: Guest Speaker | March 13, 2026</div>
+            <p>This week, we poured over crystallographic orientations. We discussed the nuances of mapping grain orientations and resolving the common confusions when plotting an Inverse Pole Figure versus a standard Pole Figure for heavily deformed microstructures.</p>
+        </div>
+
+        <div class="blog-post">
+            <h3>Week 2: Troubleshooting LAMMPS & MEAM Potentials</h3>
+            <div class="date">Discussion lead: Computational Group | March 6, 2026</div>
+            <p>A highly technical session focused on molecular dynamics. Members shared their input scripts and discussed the best strategies for resolving energy minimization errors when applying MEAM and SNAP potentials to complex lattice structures.</p>
+        </div>
+
+        <div class="blog-post">
+            <h3>Week 1: Inaugural Meeting - The State of High-Entropy Alloys</h3>
+            <div class="date">Discussion lead: Founders | February 27, 2026</div>
+            <p>Our very first gathering in the Cubicle! We kicked things off with a broad discussion on the uniaxial tension and compression behaviors of refractory HEAs. A great start to building our community of researchers.</p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Cubicle of Advanced Physics™. Brewed with curiosity.</p>
+    </footer>
+
+</body>
+</html>
